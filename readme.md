@@ -8,7 +8,7 @@
 * Так как использование сторонних библиотек запрещено, был написан алгоритм Modified Preorder Tree Traversal. Благодаря этому мы можем получить все меню одним запросом.
 
 * Отображение объектов модели в админке реализовано через отсутпы.
-![Иллюстрация к проекту]([https://github.com/jon/coolproject/raw/master/image/image.png](https://sun9-47.userapi.com/impg/g0P0AjkzttdJ1N2UAnTRVdLCABSclwPwWlu-sA/BOW2Y-cfbtU.jpg?size=726x638&quality=96&sign=490888c4b069bb69599ac6f0557101ed&type=album))
+![Иллюстрация к проекту](https://github.com/tantum-verde-forte/TestCase_TreeMenu/blob/master/Admin.PNG)
 
 
 
