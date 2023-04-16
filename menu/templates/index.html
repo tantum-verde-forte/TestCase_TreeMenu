@@ -1,0 +1,53 @@
+{% load common_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}django-simple-menu example{% endblock %}</title>
+
+    <style>
+        ul, #myUL {
+          list-style-type: none;
+        }
+
+        #myUL {
+          margin: 0;
+          padding: 0;
+        }
+
+        .caret {
+          cursor: pointer;
+          user-select: none;
+        }
+
+        .caret::before {
+          content: "\25B6";
+          color: black;
+          display: inline-block;
+          margin-right: 6px;
+        }
+
+        .caret-down::before {
+          transform: rotate(90deg);
+        }
+
+        .nested {
+          display: none;
+        }
+
+        .active {
+          display: block;
+        }
+    </style>
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+<header>
+    {% draw_menu 'Cars' %}
+</header>
+{% block body %}
+This page of {{ pointer }}
+{% endblock body %}
+</body>
+</html>

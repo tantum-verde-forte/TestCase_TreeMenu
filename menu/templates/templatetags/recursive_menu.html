@@ -1,0 +1,18 @@
+{% load common_tags %}
+{% for i in menu_items %}
+    {% if i.parent.title == parent %}
+        {% if i.left <= left and i.right >= right %}
+            <li><a class="caret caret-down" href="/menu/{{ i.title }}">{{ i.title }}</a>
+                <ul class="nested active">
+                    {% recursive_menu menu_items i.title left right%}
+                </ul>
+            </li>
+        {% else %}
+            <li><a class="caret" href="/menu/{{ i.title }}">{{ i.title }}</a>
+                <ul class="nested">
+                    {% recursive_menu menu_items i.title left right%}
+                </ul>
+            </li>
+        {% endif %}
+    {% endif %}
+{% endfor %}

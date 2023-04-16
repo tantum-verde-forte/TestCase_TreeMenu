@@ -1,0 +1,11 @@
+{% load common_tags %}
+<ul id="myUL">
+    <li><span class="caret caret-down">{{ name }}</span>
+        <ul class="nested active">
+            {% recursive_menu menu_items name left right %}
+        </ul>
+    </li>
+</ul>
+
+
+
